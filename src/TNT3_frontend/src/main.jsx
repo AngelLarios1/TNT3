@@ -8,12 +8,12 @@ import { IcpConnectContextProvider } from "@bundly/ares-react";
 const client = Client.create({
   restCanisters: {
     backend: {
-      baseUrl: "url de tu backend",
+      baseUrl: " http://bw4dl-smaaa-aaaaa-qaacq-cai.localhost:4943",
     },
   },
   providers: [
     new InternetIdentity({
-      providerUrl: "url de tu internet identity",
+      providerUrl: "http://by6od-j4aaa-aaaaa-qaadq-cai.localhost:4943/",
     }),
   ],
 });

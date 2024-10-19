@@ -1,0 +1,94 @@
+.fondoLogin {
+    background-image: url('../fotos/FondoICP.jpg'); // Cambia la ruta según sea necesario
+    background-size: cover; // Hace que la imagen cubra todo el fondo
+    background-position: center; // Centra la imagen
+    height: 100vh; // Hace que el fondo ocupe toda la altura de la ventana
+    margin: 0; // Elimina márgenes por defecto
+    display: flex; // Centra el contenido
+    align-items: center; // Centra verticalmente
+    justify-content: center; // Centra horizontalmente
+  }
+  
+  .login-container {
+    background-color: rgba(255, 255, 255, 0.9); // Fondo blanco semitransparente
+    padding: 30px; // Aumenta el padding
+    border-radius: 15px; // Bordes más redondeados
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); // Sombra más suave
+    width: 90%; // Ancho adaptativo
+    max-width: 400px; // Ancho máximo
+    text-align: center; // Centrando el texto
+    margin: 20px auto; // Centrando el contenedor
+    position: relative; // Para posicionar pseudo-elementos
+  
+    // Efecto de transición suave al hover
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+    // Efecto al hacer hover
+    &:hover {
+      transform: translateY(-5px); // Elevar ligeramente al pasar el mouse
+      box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.3); // Aumentar sombra al hover
+    }
+  }
+  
+  input {
+    width: 100%;
+    padding: 12px; // Aumenta el padding para más comodidad
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px; // Bordes más redondeados
+    transition: border-color 0.3s ease; // Transición suave
+  
+    // Cambiar el color del borde al enfocar
+    &:focus {
+      border-color: #007bff; // Color de borde al enfocar
+      outline: none; // Elimina el contorno por defecto
+      box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); // Sombra suave al enfocar
+    }
+  }
+  
+
+  
+  p {
+    margin-top: 20px;
+    color: #007bff; // Color de texto
+  }
+  
+  p a {
+    text-decoration: none; // Sin subrayado
+    color: #007bff; // Color del enlace
+  }
+  
+  p a:hover {
+    text-decoration: underline; // Subrayar al pasar el mouse
+  }
+  
+  .buttons a {
+    text-decoration: none;
+    font-size: 30px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    background: #f2c3f6;
+    color: #000000;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0,0,0,.5);
+    transition: all .4s ease-in-out;
+    position: relative; /* Para posicionar el contenido dentro */
+  }
+  
+  .button-image {
+    width: 100%; /* Ajusta la imagen al ancho del contenedor */
+    height: 100%; /* Ajusta la imagen a la altura del contenedor */
+    object-fit: cover; /* Recorta la imagen para mantener la relación de aspecto */
+    border-radius: 50%; /* Hace que la imagen también sea circular */
+    position: absolute; /* Para que la imagen se coloque en el mismo lugar que el contenedor */
+    top: 0;
+    left: 0;
+  }
+  
+  .buttons {
+    max-width: 700px;
+    display: flex;
+    justify-content: space-around;
+  }
